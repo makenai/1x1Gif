@@ -94,6 +94,9 @@
 						<small>by <a href="http://makenai.net">Pawel Szymczykowski</a> / <a href="http://twitter.com/makenai">@makenai</a></small>
 					</p>
 					<aside class="notes">
+Hi, and thanks for coming to DHTMLConf. First off, I want to do quick audience poll. How many of you want me to say GIF? uh huh. And how many for JIFF? ok. Anyone for other - something else? OK, so ___ it is. I'll try to remember to pronounce it that way.
+
+So, my name is Pawel Szymczykowski, @makenai on twitter.						
 					</aside>
 				</section>
 
@@ -101,10 +104,26 @@
 					<h1 class="vegasjs"><span>Vegas</span>JS {}</h1>
 					<p>+</p>
 					<img src="images/zappos.png" class="smaller">
+					<aside class="notes">
+I'm here repping VegasJS {}, our Las Vegas JavaScript users group. It's a great group, so please drop by if you're ever passing through town.
+
+I'm also here on behalf of Zappos.com, where I develop back end API's in Java for our mobile apps. When I get back home I'll be sure to tell them how much I enjoyed Java Fest.
+
+I'm here along with Dave Stevens who spoke yesterday on Hapi versioning and Dan Harden who will talk after me.
+
+I hobby around a lot on JavaScript and robotics for education, and it's become my go-to language for most things I write for fun.						
+					</aside>
 				</section>
 
 				<section>
 					<img src="images/single_pixel.png" width="95%">
+					<aside class="notes">
+I'm not going to make any presumptions that you all do web design, and especially not that you did web design a long time ago when the 1x1 gif trick was popular. Today, we can lay things out very nicely with CSS. You can control how every element on the page is presented - as a block, inline and a host of others. You can also specify the margins, padding and even x/y position of nearly anything very cleanly.
+
+This trick comes from a time before all that was possible, when the only choice for the flow of your web page was down and to the right.
+
+The trick in the 1x1 gif trick was to take a 1 pixel transparent image, and stretch it out so that it would take up enough space to push your content over to achieve the position that you wanted.						
+					</aside>
 				</section>
 
 				<section>
@@ -120,31 +139,55 @@
     &#x3C;A HREF=&#x22;/web/20060403150232/http://www.voiceofwomen.com/&#x22;&#x3E;Voice of Women&#x3C;/A&#x3E;&#x3C;BR&#x3E;
     
     ...</pre>
+					<aside class="notes">
+The code looked a little like this. It worked pretty well, except for the fact that your code was then littered with a bunch of images you couldn't see. It made it hard to navigate and wreaked havoc on screen readers.
+
+It also violated a concept called the 'semantic web' - a term coined by Tim Berners Lee that prioritizes content over presentation to make it easier to use data on the web. An invisible or decorative image has no semantic value.
+					</aside>    
 				</section>				
 
 				<section>
 					<img src="images/DaveSiegel.gif">
+					<aside class="notes">
+Does anyone know who this man is?
+
+His name is Dave Siegel. Or is it Seejel? If people like Tim Berners Lee and Jeffrey Zeldman are the patron saints of semantic web and good design using web standards, Dave is like the Satanic priest wearing furry goat leggings, hopping around and poking impressionable developers with smouldering sticks.
+					</aside>
 				</section>
 
 				<section>
 					<img src="images/book.gif">
+					<aside class="notes">
+He wrote this book back in 1996, it's called Designing Killer Websites. He's also the inventor os the 1x1 gif trick. It wasn't just "this one weird trick", the table of contents of this book is simply brimming with similar tricks, hacks and workarounds of a similar nature. Table based layouts, frames  and a whole lot of nope.						
+					</aside>					
 				</section>
 
 				<section>
 					<p>"If you want machines to read your web pages, use things like definition lists, unordered lists, headers, etc. If you want people to read them, don’t do it. They take away your typographic control. Specify your own font sizes when you want a size change. If you must use bullets, make your own bullets (I don’t see much point in bullets if your vertical grouping is good). And try not to number your list items. It is hardly ever necessary."
 					</p>
 					<cite>&mdash; Dave Siegel</cite>
+					<aside class="notes">
+He had an interesting way of looking at things, and often said things that would make Tim Berners Lee cry. You can't really blame him too much. It was a different era, and he came at the problem from the point of view of a print designer. He was a little bit of a control freak, and didn't try very hard to find a middle ground between style and structure. He might have been one of the first people to try to address web DESIGN instead of just web DEVELOPMENT.  He just wanted his web sites to look good and didn't apologize for anything.
+					</aside>					
 				</section>
 
 				<section>
 					<p style="text-align:left;"><img src="images/dot_clear.gif" width="48" height="2">Now is the time for all good men to come to the aid of their country.</p>
 					<pre><span class="highlight">&#x3C;IMG SRC=&#x22;images/dot_clear.gif&#x22; WIDTH=&#x22;48&#x22; HEIGHT=&#x22;2&#x22;&#x3E;</span>Now is the time for all good men to come to the aid of their country.</pre>
+					<aside class="notes">
+I'm going to take you a few of the things you could do with single pixel gifs. These are all things that can be done very easily today, but weren't possible then without resorting to trickery. I was a pretty bad web designer back then, and I've done all of these. I even hosted a website called 1x1gif.net for hosting transparent single pixel gifs because I used them so often. I'm still a pretty bad web developer today, but now I use CSS.
+
+You could use a long thin GIF to indent the first line of a paragraph. You'd have insert this in front of every paragraph. Now, you can do a text-indent in a CSS file.						
+					</aside>					
 				</section>
 
 
 				<section>
 					I wish you would<img src="images/dot_black.gif" class="spacer" width="48" height="2" valign="absmiddle">oh, nevermind.
 					<pre>I wish you would<span class="highlight">&#x3C;IMG SRC=&#x22;images/dot_black.gif&#x22; WIDTH=&#x22;48&#x22; HEIGHT=&#x22;2&#x22; VALIGN=&#x22;ABSMIDDLE&#x22;&#x3E;</span>oh, nevermind.</pre>
+					<aside class="notes">
+em dashes - vertically center your long gif and make it black, and you have an em-dash. Esthetically nice, but wrong, and huge pain when copying and pasting. There are now html entities pointing to the proper unicode code points with the correct semantic meaning for this.						
+					</aside>					
 				</section>
 
 				<section>
@@ -155,6 +198,9 @@
 css line<span class="highlight">&#x3C;IMG SRC=&#x22;images/dot_clear.gif&#x22; VALIGN=&#x22;ABSMIDDLE&#x22; HEIGHT=&#x22;60&#x22; WIDTH=&#x22;2&#x22;&#x3E;</span>&#x3C;BR&#x3E;
 spacing?<span class="highlight">&#x3C;IMG SRC=&#x22;images/dot_clear.gif&#x22; VALIGN=&#x22;ABSMIDDLE&#x22; HEIGHT=&#x22;60&#x22; WIDTH=&#x22;2&#x22;&#x3E;</span>&#x3C;BR&#x3E;
 					</pre>
+					<aside class="notes">
+If you make your invisible gif tall instead of long, you can control line spacing. At this time, the most you could do was double space, so yearning for this level of control is understandable. It also horrible, because you need to insert at least one gif per line and it makes your code a mess. We have a css line spacing property now.						
+					</aside>					
 				</section>				
 
 				<section class="noborders">
@@ -163,12 +209,16 @@ spacing?<span class="highlight">&#x3C;IMG SRC=&#x22;images/dot_clear.gif&#x22; V
 &#x3C;IMG WIDTH=&#x22;8&#x22; HEIGHT=&#x22;8&#x22; SRC=&#x22;../resources/dot_purple.gif&#x22;&#x3E;
 &#x3C;IMG HSPACE=&#x22;13&#x22; SRC=&#x22;../resources/dot_clear.gif&#x22;&#x3E;
 &#x3C;IMG WIDTH=&#x22;8&#x22; HEIGHT=&#x22;8&#x22; SRC=&#x22;../resources/dot_purple.gif&#x22;&#x3E;</span></pre>
+					<aside class="notes">
+This one just makes me say WHY. There is no good reason to do this. Dave is using a combination of purple and clear gifs to construct an ornate horizontal rule. The amount of space taken by the markup is probably larger than if there was an image. We had the technology for this.						
+					</aside>
 				</section>
 
 				<section>
-
 					<h1>__utm.gif</h1>
-
+					<aside class="notes">
+As an aside - one other really common usage for these transparent gifs is what you call web bugs or creepy pixels. Third party sites have you link them from your website so that your visitors browser load them and they can be tracked. You might be familiar with this one - it's used by Google analytics. Now, the requests of this image are in the - a really large number I don't know the name of-s per day, so you might assume they want to keep it effecient, and you'd be right. The pixel they send is 35 bytes.						
+					</aside>
 				</section>
 
 				<section>
@@ -184,6 +234,9 @@ spacing?<span class="highlight">&#x3C;IMG SRC=&#x22;images/dot_clear.gif&#x22; V
 					</ul>
 					<br><br>
 					<p><a href="http://probablyprogramming.com/2009/03/15/the-tiniest-gif-ever">http://probablyprogramming.com/2009/03/15/the-tiniest-gif-ever</a></p>
+					<aside class="notes">
+A few years ago, a developer over at probably programming (the name is not mentioned) did started investigating the smallest possible gif she or he could make. It turns out that these are the component parts of the gif and the one that google sends is a 1x1 pixel with a whte background. I can't be sure, but I like to think that somewhere there did the research and decided it was worth it losing transparency to send 2 bytes less.						
+					</aside>					
 				</section>
 
 				<section class="noborders">
@@ -207,24 +260,47 @@ spacing?<span class="highlight">&#x3C;IMG SRC=&#x22;images/dot_clear.gif&#x22; V
 	&#x3C;TD&#x3E;<span class="highlight">&#x3C;img src=&#x22;images/dot_clear.gif&#x22;&#x3E;</span>&#x3C;/TD&#x3E;
 	&#x3C;TD&#x3E;Content Here&#x3C;/TD&#x3E;
 &#x3C;/TR&#x3E;</pre>
-
+					<aside class="notes">
+Let's take a look at one more bad hack.. rounded corners. My favorite way of doing this was to create a GIF with a white background and a transparent foreground - and you can stick it into a table and change the background color of the table. It's not literally the worse, but it's not elegant.						
+					</aside>
 				</section>
 
 				<section class="noborders">
 					<img src="images/scriptaculous.png">
+					<aside class="notes">
+But then things like Scriptaculous same out and all of a sudden you could keep your markup relatively clean while an inocculous looking javascript makes it pretty for you. Cool, right? 						
+					</aside>					
 				</section>
 
 				<section class="noborders">
 					<img src="images/scriptaculous.gif">
+					<aside class="notes">
+But it does it by stacking up a bunch of single pixel divs. Yuck. I think this might be even a little bit worse. It seems like we went through a phase of 'images are evil and anything is better' but it was just kind of a step in a different but equally wrong direction.						
+					</aside>					
 				</section>
 
 				<section class="noborders">
 					<img src="images/tape.gif">
+					<aside class="notes">
+If any of this has any kind of point, I want it to be this: if you don't build things in a way that lets people do what they want. They're going to work around it. If their workaround is convenient enough, other people are going to do it. If enough people do, it maybe it will catch on or someone will write a book about it and it will haunt us for a long time. Maybe it will hurt the internet or javascript.
+
+I'm not even sure it's a bad thing. Each of those hacks I showed you has a nice solution today. If it wasn't for the doing all of the wrong things, we probably wouldn't have found nice ways of doing them. It's kind of a chicken and egg problem - if ES6 was around a few years ago, would coffeescript event be a thing? And if coffeescript hadn't been invented, would the ES6 spec even look the way it does today?
+
+I don't know.
+
+I'm not going to say don't create hacks - that's a time honored and proud tradition in computers. Go ahead and do it! But I would like us to be thoughtful when we're implementing that hack. Also think about how you'd solve that problem in an ideal world. Then maybe we can spend less time doing the wrong thing.						
+					</aside>					
 				</section>
 
 				<section>
 					<h2>#extendthewebforward</h2>
 					https://extensiblewebmanifesto.org/
+					<aside class="notes">
+But I don't write rendering engines or javascript runtimes! You might say. but you don't have to. The people who do write those things work on a set of standards - and those standards are written and tweaked by people like you.
+Please go read the extensible web manifesto, spend some time reading draft specs, maybe just some discussion lists. You might even like it.
+
+Your experience and thoughtfulness today, can help make the future less painful.
+					</aside>					
 				</section>
 
 				<section>
